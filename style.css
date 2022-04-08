@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+nav {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* background-color: #667085; */
+}
+
+.links a {
+  color: #667085;
+  text-decoration: none;
+  margin: 0px 20px;
+}
+
+button {
+  margin: 0px 2px;
+  cursor: pointer;
+  padding: 15px 20px;
+  border-radius: 7px;
+  border: none;
+  background: none;
+  color: #667085;
+  font-weight: 500;
+}
+
+button#signUp {
+  background-color: #8e2424;
+  color: #ffffff;
+}
