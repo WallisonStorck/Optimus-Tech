@@ -1,6 +1,7 @@
 :root {
   --text-color: #667085;
   --button-color: #8e2424;
+  --metric-title: #101828;
 }
 
 * {
@@ -66,4 +67,34 @@ header p {
   text-align: center;
   color: var(--text-color);
   line-height: 30px;
+}
+
+.metrics {
+  padding: 0rem 7rem 5rem 7rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.metric {
+  max-width: 17rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.metric h1 {
+  color: var(--button-color);
+  font-weight: 600;
+  font-size: 55px;
+}
+
+.metric span {
+  color: var(--metric-title);
+  font-weight: 500;
+}
+
+.metric p {
+  color: var(--text-color);
+  line-height: 24px;
 }
