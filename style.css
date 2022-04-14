@@ -1,10 +1,14 @@
 :root {
+  --white: #ffffff;
   --text-color: #667085;
   --default-color: #8e2424;
   --title-color: #101828;
   --ann-vacancies: rgba(142, 36, 36, 0.05);
   --vacancies-border: #eaecf0;
   --depositions: rgba(195, 25, 25, 0.03);
+  --trademark: #98a2b3;
+  --borders: #d0d5dd;
+  --footer: #f9fafb;
 }
 
 * {
@@ -13,9 +17,9 @@
   font-family: "Inter", sans-serif;
 }
 
-html {
-  font-size: 62, 5%;
-}
+/* html {
+  font-size: 62.5%; /* font-size 1em = 10px on default browser settings 
+} */
 
 /* body {
   height: 100%;
@@ -209,7 +213,10 @@ header p {
   margin-right: 1rem;
 }
 
+/* --- DEPOSITIONS --- */
+
 .depositions {
+  height: 30rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -270,4 +277,66 @@ header p {
 .person-job {
   color: var(--text-color);
   font-size: 14px;
+}
+
+/* --- FOOTER --- */
+
+footer {
+  height: 26rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* gap: 1rem; */
+
+  background-color: var(--footer);
+}
+
+.container-footer {
+  height: 13rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title-form {
+  color: var(--title-color);
+  font-size: 36px;
+  line-height: 44px;
+}
+
+.text-form {
+  color: var(--text-color);
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.form-mail {
+  margin-top: 0.5rem;
+}
+
+.ipt-email {
+  width: 22rem;
+  margin-right: 1rem;
+  padding: 0.7rem 1rem;
+  border: 1px solid var(--borders);
+  border-radius: 8px;
+}
+
+.btn-submit {
+  color: var(--white);
+  background-color: var(--default-color);
+
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.text-footer {
+  color: var(--trademark);
+  line-height: 24px;
 }
