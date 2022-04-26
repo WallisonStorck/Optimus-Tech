@@ -14,25 +14,29 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: "Inter", sans-serif;
 }
 
 html {
-  /* font-size 1em = 10px on default browser settings */
-  font-size: 62.5%;
+  font-size: 62.5%; /* font-size 1em = 10px on default browser settings */
 }
 
 body {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; */
+
+  /* width: 100%;
+  height: 100vh; */
 }
 
 /* --- NAV --- */
 
 nav {
-  width: 85vw;
-  height: 8rem;
+  /* width: 85vw; */
+  /* height: 8rem; */
+  padding: 1.5rem 11.2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -68,32 +72,32 @@ button#signUp {
 /* --- HEADER --- */
 
 header {
-  width: 85vw;
+  /* width: 85vw; */
   /* height: 40.7rem; */
-  height: 207px;
+  /* height: 207px; */
   padding: 9.6rem 0;
-
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   gap: 2.4rem;
 }
 
 .about-us {
   font-weight: 600;
   font-size: 16px;
-  line-height: 24px;
+  /* line-height: 24px; */
   color: var(--default-color);
 }
 
 .title-header {
-  font-size: 48px;
-  line-height: 60px;
+  font-size: 3.2rem;
+  /* line-height: 60px; */
+  color: var(--title-color);
 }
 
 .text-header {
-  max-width: 79.2rem;
+  max-width: 92rem;
   font-size: 20px;
   line-height: 30px;
   text-align: center;
@@ -103,36 +107,36 @@ header {
 /* --- SECTION METRICS --- */
 
 .metrics {
-  width: 85vw;
-  height: 28.8rem;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(4, 8fr);
+  column-gap: 3.2rem;
+  padding: 0 11.2rem;
 }
 
 .metric {
-  max-width: 28rem;
+  /* max-width: 28rem; */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 1rem;
 }
 
-.number-metric {
-  font-size: 60px;
+.metric-number {
+  font-size: 6rem;
   color: var(--default-color);
 }
 
-.title-metric {
+.metric-title {
   margin-top: 1rem;
   font-weight: 500;
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
   color: var(--title-color);
 }
 
-.text-metric {
-  font-size: 16px;
-  line-height: 24px;
+.metric-text {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
   color: var(--text-color);
 }
 
@@ -140,8 +144,9 @@ header {
 /* --- DIV TALENTS --- */
 
 .announcement {
-  width: 85vw;
-  /* padding: 5rem 7rem; */
+  /* width: 85vw;  */
+  /* padding: 0 1rem; */
+  padding-top: 18rem;
 }
 
 .talents {
@@ -156,41 +161,44 @@ header {
   font-size: 14px;
   line-height: 20px;
   color: var(--default-color);
-  padding: 0.4rem 1.2rem;
+  padding: 0.6rem 1.6rem;
   border-radius: 16px;
   background-color: var(--ann-talents);
 }
 
 .title-talents {
   color: var(--title-color);
-  font-size: 36px;
+  font-size: 3rem;
 }
 
 .text-talents {
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 2rem;
+  /* line-height: 3rem; */
   color: var(--text-color);
 }
 
 .talents img {
-  margin-top: 3.1rem;
+  margin-top: 4.5rem;
 }
 
 /* --- DIV VACANCIES --- */
 
 .vacancies {
+  margin: 5rem 0;
+
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .job-category {
-  width: 76.8rem;
-  gap: 2.4rem;
+  width: 50vw;
+  padding: 3.2rem 0;
+  /* gap: 2.4rem;*/
 }
 
 .title-category {
-  margin-top: 6.4rem;
+  /* margin-top: 6.4rem; */
 
   font-weight: 500;
   font-size: 20px;
@@ -198,33 +206,32 @@ header {
 }
 
 .job {
-  margin: 2.4rem auto;
-
-  height: 13.6rem;
-  padding: 2.4rem;
-  border-radius: 16px;
+  margin: 2rem auto;
+  /* height: 13.6rem; */
+  padding: 2rem;
+  border-radius: 12px;
   border: 1px solid var(--vacancies-border);
+
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  /* justify-content: space-between; */
+  gap: 2.5rem;
 }
 
 .job-description {
   font-weight: 500;
   font-size: 18px;
-  line-height: 28px;
+  /* line-height: 28px; */
   color: var(--title-color);
 }
 
 .job-details {
+  display: flex;
+  gap: 2.4rem;
   font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
+  /* line-height: 24px; */
   color: var(--text-color);
-}
-
-.job-details span {
-  margin-right: 2.4rem;
 }
 
 /* --- SECTION DEPOSITIONS --- */
@@ -232,61 +239,35 @@ header {
 
 .depositions {
   width: 85vw;
-  padding: 6.4rem 0;
-  margin: 9.6rem 0;
-
-  /* height: 40.4rem; */
+  padding: 6.4rem;
+  margin: 9.6rem auto;
   border-radius: 16px;
-
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: var(--depositions);
 }
 
-.text-deposition {
-  /* width: 80%; */
-  /* height: 6.5rem; */
-  margin-bottom: 3.2rem;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-
-  text-align: center;
-}
-
 .title-deposition {
-  margin-bottom: 1.6rem;
+  /* margin-bottom: 1.6rem; */
   font-weight: 600;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 1.5rem;
+  /* line-height: 20px; */
   color: var(--default-color);
 }
 
-.deposition {
+.text-deposition {
+  text-align: center;
   font-weight: 500;
-  font-size: 36px;
-  /* line-height: 44px; */
+  font-size: 30px;
+  line-height: 44px;
+  margin: 2rem 0;
+  max-width: 70vw;
   color: var(--title-color);
 }
 
-/* --- DIV PERSON-DEPOSITIONS --- */
-
-.person-deposition {
-  /* height: 7rem; */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.avatar {
-  margin-bottom: 1.6rem;
-}
-
 .person-name {
+  margin: 1.6rem 0 0.4rem 0;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
@@ -295,25 +276,27 @@ header {
 
 .person-job {
   font-size: 14px;
-  line-height: 20px;
+  /* line-height: 20px; */
   color: var(--text-color);
 }
 
 /* --- FOOTER --- */
 
 footer {
-  width: 98.9vw;
-  height: 26rem;
+  /* width: 98.9vw;
+  height: 26rem; */
+  margin-top: 15rem;
   padding: 9.6rem 0;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
   background-color: var(--footer);
+  gap: 2.5rem;
 }
 
 .title-form {
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
 
   font-size: 36px;
   line-height: 44px;
@@ -321,15 +304,15 @@ footer {
 }
 
 .text-form {
-  margin-bottom: 4rem;
+  /* margin-bottom: 4rem; */
 
   font-size: 20px;
   line-height: 30px;
   color: var(--text-color);
 }
 
-.form-mail {
-  margin-bottom: 3.2rem;
+footer form {
+  display: flex;
 }
 
 .ipt-email {
@@ -344,7 +327,7 @@ footer {
   padding: 1.2rem 2rem;
   cursor: pointer;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
 
   font-weight: 500;
   font-size: 16px;
