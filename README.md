@@ -14,7 +14,11 @@
 <br>
 
 <p align="center">
-  <img alt="Landing Page" src="./OptimusTech.png">
+  <img alt="Landing Page" src="./PrintPage.png">
+</p>
+
+<p align="center">
+  <img alt="Landing Page" src="./PageMobile.png">
 </p>
 
 <br>
@@ -31,5 +35,8 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - HTML
 - CSS
+  - FlexBox
+  - Grid Layout
+- JavaScript
 
 ---
